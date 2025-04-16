@@ -1,0 +1,537 @@
+/* style.css - HTB Academy Inspired Theme (vFinal - Adapted for 5 Tabs) */
+
+/* 1. Definire Variabile Culoare */
+:root {
+    --htb-bg-darker: #151a2c;  /* Cel mai închis fundal (pt nav) */
+    --htb-bg-dark: #1a2035;   /* Fundal principal body */
+    --htb-bg-medium: #2a314b; /* Fundal carduri/secțiuni */
+    --htb-bg-light: #3c466e;   /* Fundal hover/subtil */
+    --htb-accent: #9fef00;    /* Verde vibrant */
+    --htb-accent-darker: #8bdb00; /* Verde puțin mai închis (hover) */
+    --htb-text-primary: #ffffff;
+    --htb-text-secondary: #adb5bd; /* Gri deschis */
+    --htb-text-muted: #6c757d;   /* Gri mai închis */
+    --htb-border-color: #404a70;  /* Border subtil */
+    --htb-border-light: rgba(159, 239, 0, 0.2); /* Border accent translucid */
+    --htb-tag-medium: #ffae42;  /* Portocaliu/Maro pt warning */
+    --htb-tag-red: #e74c3c;      /* Roșu pt danger */
+    --htb-tag-blue: #3498db;     /* Albastru pt info */
+    --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* 2. Override Variabile Bootstrap Globale pt [data-bs-theme="dark"] */
+[data-bs-theme="dark"] {
+    /* Culori de Bază */
+    --bs-body-bg: var(--htb-bg-dark);
+    --bs-body-color: var(--htb-text-secondary);
+    --bs-emphasis-color: var(--htb-text-primary);
+    --bs-secondary-bg: var(--htb-bg-medium);
+    --bs-tertiary-bg: var(--htb-bg-medium);
+    --bs-border-color: var(--htb-border-color);
+    --bs-border-color-translucent: var(--htb-border-light);
+    --bs-heading-color: var(--htb-text-primary);
+    --bs-link-color: var(--htb-accent);
+    --bs-link-hover-color: var(--htb-accent-darker);
+    --bs-code-color: var(--htb-tag-blue); /* Culoare pt elemente 'code' dacă apar */
+
+    /* Culoare Primară (Verde HTB) */
+    --bs-primary: var(--htb-accent);
+    --bs-primary-rgb: 159, 239, 0;
+    --bs-primary-text-emphasis: #111827; /* Text închis pt lizibilitate pe fundal accent */
+    --bs-primary-bg-subtle: rgba(159, 239, 0, 0.1);
+    --bs-primary-border-subtle: rgba(159, 239, 0, 0.4);
+
+    /* Butoane - General */
+    --bs-btn-font-weight: 600;
+    --bs-btn-padding-y: .3rem; /* Butoane puțin mai mici */
+    --bs-btn-padding-x: .75rem;
+    --bs-btn-font-size: .875rem;
+    --bs-btn-border-radius: .3rem; /* Colțuri puțin mai rotunjite */
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05); /* Efect subtil */
+    --bs-btn-disabled-opacity: 0.5;
+
+    /* Butoane - Specific */
+    --bs-btn-color: var(--htb-text-primary);
+    --bs-btn-bg: var(--htb-bg-light);
+    --bs-btn-border-color: var(--htb-border-color);
+    --bs-btn-hover-bg: var(--htb-bg-medium);
+    --bs-btn-hover-border-color: var(--htb-accent);
+    --bs-btn-active-bg: var(--htb-bg-medium);
+    --bs-btn-active-border-color: var(--htb-accent);
+
+    --bs-btn-primary-color: var(--bs-primary-text-emphasis);
+    --bs-btn-primary-bg: var(--htb-accent);
+    --bs-btn-primary-border-color: var(--htb-accent);
+    --bs-btn-primary-hover-bg: var(--htb-accent-darker);
+    --bs-btn-primary-hover-border-color: var(--htb-accent-darker);
+    --bs-btn-primary-active-bg: #7cc400;
+    --bs-btn-primary-active-border-color: #7cc400;
+    --bs-btn-primary-disabled-bg: var(--htb-accent);
+    --bs-btn-primary-disabled-border-color: var(--htb-accent);
+
+    --bs-btn-secondary-color: var(--htb-text-secondary); /* Buton standard/cancel */
+    --bs-btn-secondary-bg: var(--htb-bg-light);
+    --bs-btn-secondary-border-color: var(--htb-border-color);
+    --bs-btn-secondary-hover-bg: var(--htb-bg-medium);
+    --bs-btn-secondary-hover-border-color: var(--htb-text-secondary);
+
+    --bs-btn-outline-secondary-color: var(--htb-text-secondary);
+    --bs-btn-outline-secondary-border-color: var(--htb-border-color);
+    --bs-btn-outline-secondary-hover-color: var(--htb-text-primary);
+    --bs-btn-outline-secondary-hover-bg: var(--htb-bg-light);
+
+    --bs-btn-warning-color: var(--bs-primary-text-emphasis);
+    --bs-btn-warning-bg: var(--htb-tag-medium);
+    --bs-btn-warning-border-color: var(--htb-tag-medium);
+    --bs-btn-warning-hover-bg: #fca031;
+    --bs-btn-warning-hover-border-color: #fca031;
+
+    --bs-btn-danger-color: var(--htb-text-primary);
+    --bs-btn-danger-bg: var(--htb-tag-red);
+    --bs-btn-danger-border-color: var(--htb-tag-red);
+    --bs-btn-danger-hover-bg: #c0392b;
+    --bs-btn-danger-hover-border-color: #c0392b;
+
+    --bs-btn-outline-danger-color: var(--htb-tag-red);
+    --bs-btn-outline-danger-border-color: var(--htb-tag-red);
+    --bs-btn-outline-danger-hover-color: var(--htb-text-primary);
+    --bs-btn-outline-danger-hover-bg: var(--htb-tag-red);
+
+    --bs-btn-info-color: var(--htb-text-primary);
+    --bs-btn-info-bg: var(--htb-tag-blue);
+    --bs-btn-info-border-color: var(--htb-tag-blue);
+    --bs-btn-info-hover-bg: #2980b9;
+    --bs-btn-info-hover-border-color: #2980b9;
+
+    --bs-btn-success-color: var(--bs-primary-text-emphasis);
+    --bs-btn-success-bg: var(--htb-accent);
+    --bs-btn-success-border-color: var(--htb-accent);
+    --bs-btn-success-hover-bg: var(--htb-accent-darker);
+    --bs-btn-success-hover-border-color: var(--htb-accent-darker);
+
+    --bs-btn-outline-success-color: var(--htb-accent);
+    --bs-btn-outline-success-border-color: var(--htb-accent);
+    --bs-btn-outline-success-hover-color: var(--bs-primary-text-emphasis);
+    --bs-btn-outline-success-hover-bg: var(--htb-accent);
+
+    /* Formulare */
+    --bs-body-secondary-color: var(--htb-text-muted);
+    --bs-secondary-color: var(--htb-text-secondary);
+    --bs-form-label-color: var(--htb-text-secondary);
+    --bs-form-control-bg: var(--htb-bg-dark);
+    --bs-form-control-color: var(--htb-text-primary);
+    --bs-form-control-border-color: var(--htb-border-color);
+    --bs-form-control-focus-bg: var(--htb-bg-dark);
+    --bs-form-control-focus-border-color: var(--htb-accent);
+    --bs-form-control-placeholder-color: var(--htb-text-muted);
+    --bs-form-select-bg: var(--bs-form-control-bg);
+    --bs-form-select-indicator-color: var(--htb-text-secondary);
+    --bs-form-select-border-color: var(--bs-form-control-border-color);
+    --bs-form-select-focus-border-color: var(--bs-form-control-focus-border-color);
+    --bs-form-select-disabled-bg: var(--htb-bg-medium);
+    --bs-form-check-input-bg: var(--htb-bg-dark);
+    --bs-form-check-input-border: 1px solid var(--htb-border-color);
+    --bs-form-check-input-checked-bg-color: var(--htb-accent);
+    --bs-form-check-input-checked-border-color: var(--htb-accent);
+    --bs-form-text-color: var(--htb-text-muted);
+    --bs-input-group-addon-bg: var(--htb-bg-light);
+    --bs-input-group-addon-color: var(--htb-text-secondary);
+    --bs-input-group-addon-border-color: var(--htb-border-color);
+
+    /* Tabele */
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--htb-border-color);
+    --bs-table-color: var(--htb-text-secondary);
+    --bs-table-striped-bg: rgba(42, 49, 75, 0.4); /* Mai subtil */
+    --bs-table-striped-color: var(--htb-text-secondary);
+    --bs-table-hover-bg: var(--htb-bg-light);
+    --bs-table-hover-color: var(--htb-text-primary);
+
+    /* Acordeon */
+    --bs-accordion-bg: transparent;
+    --bs-accordion-color: var(--htb-text-secondary);
+    --bs-accordion-button-color: var(--htb-text-primary);
+    --bs-accordion-button-active-color: var(--htb-accent);
+    --bs-accordion-button-active-bg: var(--htb-bg-light); /* Background la activare */
+    --bs-accordion-border-color: var(--htb-border-color);
+    --bs-accordion-button-focus-border-color: var(--htb-accent);
+    --bs-accordion-button-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23adb5bd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-button-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239fef00'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+    /* Alerte, Toast, List Group (setări de bază ok) */
+    --bs-alert-bg: var(--htb-bg-medium);
+    --bs-alert-border-color: var(--htb-border-color);
+    --bs-alert-color: var(--htb-text-secondary);
+    --bs-toast-bg: var(--htb-bg-light);
+    --bs-toast-color: var(--htb-text-primary);
+    --bs-toast-border-color: var(--htb-border-color);
+    --bs-toast-header-bg: var(--htb-bg-medium);
+    --bs-toast-header-color: var(--htb-text-secondary);
+    --bs-toast-header-border-color: var(--htb-border-color);
+    --bs-list-group-bg: transparent;
+    --bs-list-group-color: var(--htb-text-secondary);
+    --bs-list-group-border-color: var(--htb-border-color);
+    --bs-list-group-action-hover-bg: var(--htb-bg-light);
+    --bs-list-group-item-padding-x: 1rem;
+    --bs-list-group-item-padding-y: 0.5rem; /* Consistent list item padding */
+}
+
+/* 3. Stiluri Generale */
+html {
+  scroll-padding-top: 60px; /* Offset for potential fixed headers if added later */
+}
+
+body {
+  padding: 0;
+  /* Adjusted padding-bottom to ensure content doesn't hide under 5-button nav */
+  padding-bottom: 75px; /* Increased slightly */
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-family: var(--font-stack);
+  line-height: 1.6;
+  font-size: 0.95rem; /* Font size global puțin mai mic */
+}
+
+.container.main-content {
+  padding: 15px;
+  margin-bottom: 50px; /* Ensure spacing above bottom nav */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-heading-color);
+    font-weight: 600;
+}
+/* Titluri tab-uri */
+.tab-content > h1 {
+    font-size: 1.4rem; /* Redus */
+    border-bottom: 1px solid var(--htb-border-color);
+    padding-bottom: 12px;
+    margin-bottom: 25px !important;
+    text-align: left; /* Aliniere stânga */
+    color: var(--htb-text-secondary); /* Culoare mai subtilă */
+}
+
+a {
+    color: var(--htb-accent);
+    text-decoration: none;
+}
+a:hover {
+    color: #c1ff7a;
+}
+
+/* 4. Stiluri Componente Specifice */
+
+/* Navigare Inferioară (Adaptată pt 5 butoane) */
+#bottomNav {
+  background-color: var(--htb-bg-darker);
+  border-top: 1px solid var(--htb-border-color);
+  padding: 5px 0; /* Slightly reduced vertical padding */
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: space-around;
+  position: fixed; /* Asigură fixare */
+  bottom: 0; left: 0; right: 0; z-index: 1030; /* Peste conținut */
+}
+#bottomNav button {
+  flex: 1; /* Each button takes equal space */
+  background: none; border: none;
+  color: var(--htb-text-muted);
+  padding: 5px 3px; /* Adjusted padding */
+  font-size: 0.65rem; /* Slightly smaller font for 5 buttons */
+  line-height: 1.1;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 4px;
+  margin: 0 2px; /* Reduced margin between buttons */
+  display: flex; flex-direction: column; align-items: center;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+#bottomNav button i {
+  font-size: 1.2rem; /* Slightly smaller icons */
+  margin-bottom: 3px; /* Adjusted space */
+}
+#bottomNav button span {
+    /* font-size already set on button */
+}
+#bottomNav button:hover {
+  color: var(--htb-text-secondary);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+#bottomNav button.active {
+  color: var(--htb-accent);
+  font-weight: 600;
+  background-color: rgba(159, 239, 0, 0.1);
+}
+#bottomNav button:active {
+   transform: none;
+   background-color: rgba(159, 239, 0, 0.15);
+}
+
+/* Secțiuni (Carduri) */
+.form-section,
+.dashboard-section,
+.table-controls /* Moved table controls styling here */
+{
+    background-color: var(--htb-bg-medium);
+    padding: 18px; /* Padding uniform */
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 1px solid var(--htb-border-color);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+/* Specific styling for titles inside sections */
+.form-section h2,
+.dashboard-section h2,
+.data-management-section h2 {
+    font-size: 1.05rem; /* Titluri secțiuni */
+    margin-bottom: 15px !important; /* Ensure spacing */
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--htb-border-color);
+    color: var(--htb-text-primary);
+    font-weight: 600;
+}
+/* Sub-sections within data management */
+.data-management-section h3 {
+    font-size: 0.95rem;
+    color: var(--htb-text-secondary);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem; /* Spațiu între sub-secțiuni */
+    padding-bottom: 5px;
+    border-bottom: 1px dashed var(--htb-border-color); /* Separator diferit */
+}
+.data-management-section h3:first-of-type {
+    margin-top: 0; /* Fără margine sus la primul h3 */
+}
+
+/* Tabel Antrenamente */
+.workout-table-container { margin-top: 20px; }
+#workoutTable { border-collapse: separate; border-spacing: 0; width: 100%; }
+#workoutTable thead { background-color: var(--htb-bg-light); }
+#workoutTable th {
+    font-weight: 600; color: var(--htb-text-primary);
+    padding: 0.5rem 0.6rem; /* Padding optimizat */
+    white-space: nowrap; border-bottom: 2px solid var(--htb-border-color);
+    font-size: 0.85rem; /* Header mai mic */
+    vertical-align: middle;
+}
+#workoutTable td {
+    padding: 0.4rem 0.6rem; /* Padding optimizat */
+    vertical-align: middle; border-top: 1px solid var(--htb-border-color);
+    font-size: 0.85rem; /* Celule mai mici */
+}
+/* Sort icon alignment */
+#workoutTable th .sort-icon {
+    font-size: 0.8em;
+    margin-left: 4px;
+    vertical-align: middle;
+    opacity: 0.6;
+}
+#workoutTable th:hover .sort-icon {
+    opacity: 1;
+}
+#workoutTable th .bi-sort-up,
+#workoutTable th .bi-sort-down {
+    opacity: 1; /* Make active sort icon fully visible */
+}
+/* Eliminăm striping explicit, folosim hover */
+.table-striped>tbody>tr:nth-of-type(odd)>* { --bs-table-accent-bg: transparent; color: var(--bs-table-color); }
+#workoutTable tbody tr:hover { background-color: var(--bs-table-hover-bg); color: var(--bs-table-hover-color); }
+/* Stil notițe în tabel */
+#workoutTable td small {
+    font-size: 0.75rem; color: var(--htb-text-muted); display: block;
+    max-width: 120px; white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis; cursor: default;
+}
+#workoutTable td small[title]:hover {
+    white-space: normal; overflow: visible; max-width: 300px; position: relative; z-index: 2;
+}
+/* Butoane acțiuni tabel */
+#workoutTable .text-nowrap .btn { padding: .1rem .3rem; font-size: .75rem; margin-left: 3px; }
+
+/* Paginație Tabel */
+#paginationControls {
+    /* Buttons will be styled by Bootstrap */
+}
+#paginationControls .page-link { /* Style pagination links provided by Bootstrap if needed */
+     background-color: var(--htb-bg-light);
+     border-color: var(--htb-border-color);
+     color: var(--htb-text-secondary);
+}
+#paginationControls .page-link:hover {
+    background-color: var(--htb-bg-medium);
+    color: var(--htb-text-primary);
+}
+#paginationControls .page-item.active .page-link {
+    background-color: var(--htb-accent);
+    border-color: var(--htb-accent);
+    color: var(--bs-primary-text-emphasis);
+}
+#paginationControls .page-item.disabled .page-link {
+    background-color: var(--htb-bg-medium);
+    border-color: var(--htb-border-color);
+    color: var(--htb-text-muted);
+}
+
+/* Exercise Image Preview */
+#exerciseImagePreview {
+    background-color: var(--htb-bg-dark); /* Match form bg */
+    border: 1px solid var(--htb-border-color);
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 100px; /* Ensure space even when empty */
+    display: flex; /* Center content */
+    align-items: center;
+    justify-content: center;
+}
+#previewImg {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 4px;
+    border: 1px solid var(--htb-border-light);
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Fade effect */
+}
+#previewText {
+    color: var(--htb-text-muted);
+    font-size: 0.8rem;
+}
+
+/* Grafice */
+.chart-container {
+    background-color: var(--htb-bg-dark); /* Match form bg */
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--htb-border-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    position: relative; /* For potential tooltips */
+}
+.chart-title { font-size: 1rem; margin-bottom: 15px; font-weight: 600; }
+/* Culori Grafice (actualizate) */
+.bar { fill: var(--htb-tag-blue); transition: fill 0.2s ease; }
+.bar:hover { fill: #5dade2; }
+.line-volume { stroke: var(--htb-accent); stroke-width: 2px; fill: none; }
+.line-e1rm { stroke: var(--htb-tag-red); stroke-width: 2px; fill: none; } /* For progress chart */
+.dot-weight { fill: var(--htb-tag-red); stroke: var(--htb-bg-medium); stroke-width: 1.5px; } /* Example dot style */
+/* Stiluri axe D3 */
+.chart-container svg text,
+.chart-container svg .tick text { fill: var(--htb-text-secondary); font-size: 10px; }
+.chart-container svg .domain { stroke: var(--htb-border-color); }
+.chart-container svg .tick line { stroke: var(--htb-border-color); stroke-opacity: 0.4; }
+.chart-container svg .axis-label { fill: var(--htb-text-secondary); font-size: 10px; font-weight: 500; }
+/* Stil specific grafic bare musculare (exemplu D3) */
+.muscle-bar { fill: var(--htb-accent); } /* Bare verzi */
+.muscle-bar:hover { fill: var(--htb-accent-darker); }
+.bar-label { /* Etichete pe barele musculare */
+    font-size: 9px !important; /* Micșorat */
+    fill: var(--bs-primary-text-emphasis) !important; /* Text închis pentru lizibilitate pe verde */
+    font-weight: bold;
+    pointer-events: none; /* Avoid interfering with bar hover */
+}
+
+/* Dashboard Stats */
+.dashboard-header { align-items: baseline; }
+.dashboard-header h1 { margin-bottom: 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 18px; } /* Mai multe coloane pe spațiu */
+.stat-item .value { font-size: 1.5rem; font-weight: 700; color: var(--htb-accent); line-height: 1.1; display: block;}
+.stat-item .label { font-size: 0.65rem; color: var(--htb-text-muted); text-transform: uppercase; margin-top: 3px; display: block;}
+
+/* Dashboard PR List */
+#personalRecordsList .list-group-item {
+    background-color: transparent;
+    border-color: var(--htb-border-color);
+    padding: .5rem 0; /* Adjusted padding */
+    font-size: 0.85rem;
+    display: flex; /* Use flex for better alignment */
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+#personalRecordsList .pr-exercise { font-weight: 600; color: var(--bs-emphasis-color); margin-right: auto; padding-right: 10px; }
+#personalRecordsList .pr-details { display: flex; gap: 8px; align-items: baseline; font-size: 0.8rem; flex-wrap: wrap;} /* Container for values */
+#personalRecordsList .pr-value { font-weight: bold; color: var(--htb-accent); }
+#personalRecordsList .pr-value .pr-type { font-size: 0.7rem; color: var(--htb-text-muted); margin-left: 2px; font-weight: normal; }
+#personalRecordsList .pr-date { font-size: 0.7rem; color: var(--htb-text-muted); margin-left: 5px; }
+
+
+/* Setări */
+.custom-file-upload {
+    background-color: var(--bs-btn-warning-bg); color: var(--bs-btn-warning-color); border-color: var(--bs-btn-warning-border-color);
+    transition: background-color 0.2s ease, border-color 0.2s ease; padding: .3rem .75rem; font-size: .875rem;
+    cursor: pointer; display: inline-block;
+}
+.custom-file-upload:hover { background-color: var(--bs-btn-warning-hover-bg); border-color: var(--bs-btn-warning-hover-border-color); }
+.settings-list { max-height: 250px; overflow-y: auto; border: 1px solid var(--htb-border-color); border-radius: var(--bs-border-radius-sm); margin-top: 8px; }
+.settings-list .list-group-item {
+    background-color: var(--htb-bg-dark); /* Darker items */
+    border-color: var(--htb-border-color);
+    padding: .4rem .75rem;
+    display: flex; justify-content: space-between; align-items: center; /* Align items */
+}
+.settings-list .list-group-item button { padding: 0 .3rem; line-height: 1; font-size: 0.9rem; }
+
+/* Wellness Tab Specifics (optional - mostly covered by form styles) */
+#wellnessForm hr {
+    border-top: 1px solid var(--htb-border-color);
+    opacity: 0.5;
+}
+
+/* Plan Tab Specifics (optional - mostly covered by list/section styles) */
+#planTabContent .list-group-item {
+     background-color: transparent; /* Ensure transparent items */
+     border-bottom: 1px solid var(--htb-border-color);
+     padding: 0.6rem 0; /* Adjust padding */
+}
+#planTabContent .list-group-item:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+/* Alte ajustări */
+.pr-indicator { color: var(--htb-accent); margin-left: 5px; font-size: 0.9em; vertical-align: middle; }
+#muscleGroups { min-height: 110px; } /* Select grupe musculare */
+/* Style for sets container when warning is visible */
+#setsWarning:not(.d-none) {
+    margin-bottom: 0.5rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--htb-bg-darker); }
+::-webkit-scrollbar-thumb { background-color: var(--htb-bg-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background-color: var(--htb-border-color); }
+
+/* Tab Content Fade/Display */
+.tab-content { display: none; animation: fadeIn 0.3s ease-in-out; }
+.tab-content.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body { padding-bottom: 70px; /* Slightly less padding needed if nav is shorter */ }
+    .container.main-content { padding: 10px; }
+    .form-section, .dashboard-section, .table-controls { padding: 15px; }
+    .tab-content > h1 { font-size: 1.3rem; margin-bottom: 20px !important; padding-bottom: 8px; }
+    .stats-grid { gap: 10px; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); }
+    .stat-item .value { font-size: 1.3rem; }
+    .stat-item .label { font-size: 0.6rem; }
+    #bottomNav { padding: 4px 0; }
+    #bottomNav button { font-size: 0.6rem; padding: 4px 2px; margin: 0 1px; } /* Further adjust for very small screens */
+    #bottomNav button i { font-size: 1.1rem; margin-bottom: 2px;}
+    #personalRecordsList .pr-details { gap: 5px; font-size: 0.75rem; } /* Adjust PR list spacing */
+}
+
+@media (max-width: 400px) {
+     #bottomNav button span {
+          display: none; /* Hide text on very small screens if needed */
+     }
+      #bottomNav button {
+          font-size: 0.6rem;
+          padding: 6px 2px; /* Adjust padding if text is hidden */
+     }
+     #bottomNav button i {
+          font-size: 1.3rem; /* Make icon slightly larger if text hidden */
+          margin-bottom: 0;
+     }
+     .stats-grid { grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 8px;} /* Adjust stats grid */
+     .stat-item .value { font-size: 1.2rem; }
+}
