@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Full Body 3x/Săpt (A/B - Începător/Mediu)",
+    "level": "Începător/Mediu",
+    "frequency": "3 zile/săptămână",
+    "description": "Alternați A și B, focus pe compuse...",
+    "workouts": {
+      "A": [
+        { "exercise": "Squat (Bară - Genuflexiune)", "sets": 3, "reps": "6-10" },
+        { "exercise": "Bench Press (Bară - Împins la piept)", "sets": 3, "reps": "6-10" },
+        ...
+      ],
+      "B": [
+        { "exercise": "Deadlift (Romanian - RDL)", "sets": 3, "reps": "8-12" },
+        ...
+      ]
+    }
+  },
+  {
+    "name": "Push Pull Legs (6x/Săpt - Avansat)",
+    "level": "Avansat",
+    "frequency": "6 zile/săptămână",
+    "description": "PPL PPL Odihnă. Volum ridicat.",
+    "workouts": {
+      "Push": [ ... ],
+      "Pull": [ ... ],
+      "Legs": [ ... ]
+    }
+  },
+  ...
+]
