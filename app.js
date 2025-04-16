@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadExercisesData() {
         try {
             // *** IMPORTANT: Change this to 'exercises_v2.json' or your structured file name ***
-            const response = await fetch('exercises_v2.json'); // Assumes structured JSON exists
+            const response = await fetch('exercises.json'); // Assumes structured JSON exists
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
