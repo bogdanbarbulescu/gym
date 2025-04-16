@@ -1,0 +1,520 @@
+[
+  {
+    "name": "Ab Wheel Rollout",
+    "image": "url_imagine_ab_wheel_rollout.gif",
+    "muscles": ["Abdomen"]
+  },
+  {
+    "name": "Arnold Press (Ganteră)",
+    "image": "url_imagine_arnold_press.gif",
+    "muscles": ["Umeri"]
+  },
+  {
+    "name": "Barbell Curl (Bară dreaptă/EZ)",
+    "image": "url_imagine_barbell_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Barbell Row (Aplecat/Ramat orizontal)",
+    "image": "url_imagine_barbell_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Bench Press (Bară - Împins la piept/Împins orizontal)",
+    "image": "url_imagine_bench_press.gif",
+    "muscles": ["Piept", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Bench Press Înclinat (Bară/Împins piept înclinat)",
+    "image": "url_imagine_incline_bench_press_barbell.gif",
+    "muscles": ["Piept (superior)", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Bench Press Declinat (Bară)",
+    "image": "url_imagine_decline_bench_press_barbell.gif",
+    "muscles": ["Piept (inferior)", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Bent Over Lateral Raise (Ganteră/Cablu)",
+    "image": "url_imagine_bent_over_lateral_raise.gif",
+    "muscles": ["Umeri (posterior)"]
+  },
+  {
+    "name": "Bicep Curl (Ganteră - Alternativ/Simultan)",
+    "image": "url_imagine_dumbbell_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Box Squat",
+    "image": "url_imagine_box_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "image": "url_imagine_bulgarian_split_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Cable Crossover (Cablu/Scripete declinat)",
+    "image": "url_imagine_cable_crossover.gif",
+    "muscles": ["Piept (interior)"]
+  },
+  {
+    "name": "Cable Crunch (Cablu)",
+    "image": "url_imagine_cable_crunch.gif",
+    "muscles": ["Abdomen"]
+  },
+  {
+    "name": "Cable Curl (Scripete/Biceps scripete)",
+    "image": "url_imagine_cable_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Cable Lateral Raise (Cablu)",
+    "image": "url_imagine_cable_lateral_raise.gif",
+    "muscles": ["Umeri (lateral)"]
+  },
+  {
+    "name": "Cable Pushdown (Cablu - Sfoară/Bară V/Bară dreaptă)",
+    "image": "url_imagine_cable_pushdown.gif",
+    "muscles": ["Triceps"]
+  },
+  {
+    "name": "Cable Row (Seated - Cablu/Tras aparat/Tras aparat spate/Tras aparat orizontal)",
+    "image": "url_imagine_seated_cable_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Calf Raise (La aparat/Stând/Șezând/Gambe)",
+    "image": "url_imagine_calf_raise.gif",
+    "muscles": ["Gastrocnemian", "Solear"]
+  },
+  {
+    "name": "Chest Dip (Paralele - focus Piept)",
+    "image": "url_imagine_chest_dip.gif",
+    "muscles": ["Piept (inferior)", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Chin-up (Tracțiuni priză supinată)",
+    "image": "url_imagine_chin_up.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Concentration Curl (Ganteră)",
+    "image": "url_imagine_concentration_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Crunch (Abdomene)",
+    "image": "url_imagine_crunch.gif",
+    "muscles": ["Abdomen"]
+  },
+  {
+    "name": "Deadlift (Îndreptări - Conventional)",
+    "image": "url_imagine_conventional_deadlift.gif",
+    "muscles": [
+      "Spate (inferior)",
+      "Fesieri",
+      "Femurali",
+      "Cvadriceps",
+      "Trapez"
+    ]
+  },
+  {
+    "name": "Deadlift (Romanian - RDL)",
+    "image": "url_imagine_romanian_deadlift.gif",
+    "muscles": ["Femurali", "Fesieri", "Spate (inferior)"]
+  },
+  {
+    "name": "Deadlift (Sumo)",
+    "image": "url_imagine_sumo_deadlift.gif",
+    "muscles": [
+      "Cvadriceps",
+      "Fesieri",
+      "Femurali",
+      "Spate (inferior)",
+      "Trapez"
+    ]
+  },
+  {
+    "name": "Decline Bench Press (Ganteră/Declinat gantere)",
+    "image": "url_imagine_decline_dumbbell_press.gif",
+    "muscles": ["Piept (inferior)", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Decline Crunch",
+    "image": "url_imagine_decline_crunch.gif",
+    "muscles": ["Abdomen"]
+  },
+  {
+    "name": "Dumbbell Bench Press (Ganteră - Împins la piept/Împins cu gantere)",
+    "image": "url_imagine_dumbbell_bench_press.gif",
+    "muscles": ["Piept", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Dumbbell Curl (Ganteră)",
+    "image": "url_imagine_dumbbell_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Dumbbell Deadlift (Îndreptări cu gantere/Îndreptări gantera)",
+    "image": "url_imagine_dumbbell_deadlift.gif",
+    "muscles": ["Femurali", "Fesieri", "Spate (inferior)"]
+  },
+  {
+    "name": "Dumbbell Fly (Ganteră - Fluturări)",
+    "image": "url_imagine_dumbbell_fly.gif",
+    "muscles": ["Piept"]
+  },
+  {
+    "name": "Dumbbell Front Raise (Ganteră/Ridicări disc frontal)",
+    "image": "url_imagine_dumbbell_front_raise.gif",
+    "muscles": ["Umeri (anterior)"]
+  },
+  {
+    "name": "Dumbbell Lateral Raise (Ganteră/Ridicări laterale ganteră)",
+    "image": "url_imagine_dumbbell_lateral_raise.gif",
+    "muscles": ["Umeri (lateral)"]
+  },
+  {
+    "name": "Dumbbell Pullover (Ganteră)",
+    "image": "url_imagine_dumbbell_pullover.gif",
+    "muscles": ["Spate", "Piept"]
+  },
+  {
+    "name": "Dumbbell Row (Ganteră - Ramat)",
+    "image": "url_imagine_dumbbell_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Dumbbell Shrug (Ganteră - Ridicări umeri/Trapez gantere)",
+    "image": "url_imagine_dumbbell_shrug.gif",
+    "muscles": ["Trapez"]
+  },
+  {
+    "name": "Dumbbell Shoulder Press (Ganteră - Presă umeri/Împins umeri)",
+    "image": "url_imagine_dumbbell_shoulder_press.gif",
+    "muscles": ["Umeri", "Triceps"]
+  },
+  {
+    "name": "Face Pull (Cablu/Scripete disc)",
+    "image": "url_imagine_face_pull.gif",
+    "muscles": [
+      "Umeri (posterior)",
+      "Trapez (inferior/mijlociu)",
+      "Rotatori externi"
+    ]
+  },
+  {
+    "name": "Flat Bench Dumbbell Fly (Ganteră)",
+    "image": "url_imagine_flat_dumbbell_fly.gif",
+    "muscles": ["Piept"]
+  },
+  {
+    "name": "Front Squat (Bară)",
+    "image": "url_imagine_front_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Glute Bridge",
+    "image": "url_imagine_glute_bridge.gif",
+    "muscles": ["Fesieri", "Femurali", "Spate (inferior)"]
+  },
+  {
+    "name": "Glute Kickback (Cablu/Aparat)",
+    "image": "url_imagine_glute_kickback.gif",
+    "muscles": ["Fesieri"]
+  },
+  {
+    "name": "Goblet Squat (Ganteră/Kettlebell)",
+    "image": "url_imagine_goblet_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Good Morning (Bară)",
+    "image": "url_imagine_good_morning.gif",
+    "muscles": ["Femurali", "Fesieri", "Spate (inferior)"]
+  },
+  {
+    "name": "Hack Squat (Aparat)",
+    "image": "url_imagine_hack_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Hammer Curl (Ganteră/Biceps ciocane)",
+    "image": "url_imagine_hammer_curl.gif",
+    "muscles": ["Biceps", "Braхиалис", "Braхиорадиалис"]
+  },
+  {
+    "name": "Hanging Leg Raise (La bară)",
+    "image": "url_imagine_hanging_leg_raise.gif",
+    "muscles": ["Abdomen (inferior)"]
+  },
+  {
+    "name": "Hip Abduction (Aparat/Aductori)",
+    "image": "url_imagine_hip_abduction.gif",
+    "muscles": ["Abductori (Gluteus Medius, Gluteus Minimus)"]
+  },
+  {
+    "name": "Hip Adduction (Aparat)",
+    "image": "url_imagine_hip_adduction.gif",
+    "muscles": ["Aductori"]
+  },
+  {
+    "name": "Hip Thrust (Bară/Aparat)",
+    "image": "url_imagine_hip_thrust.gif",
+    "muscles": ["Fesieri", "Femurali", "Cvadriceps"]
+  },
+  {
+    "name": "Hyperextension (Extensii spate)",
+    "image": "url_imagine_hyperextension.gif",
+    "muscles": ["Spate (inferior)", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Incline Bench Press (Ganteră/Împins piept înclinat)",
+    "image": "url_imagine_incline_dumbbell_press.gif",
+    "muscles": ["Piept (superior)", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Incline Dumbbell Curl (Ganteră)",
+    "image": "url_imagine_incline_dumbbell_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Incline Dumbbell Fly (Ganteră)",
+    "image": "url_imagine_incline_dumbbell_fly.gif",
+    "muscles": ["Piept (superior)"]
+  },
+  {
+    "name": "Lat Pulldown (Aparat helcometru - Priză largă/îngustă/neutră)",
+    "image": "url_imagine_lat_pulldown.gif",
+    "muscles": ["Spate (dorsali)", "Biceps"]
+  },
+  {
+    "name": "Lateral Raise (Aparat)",
+    "image": "url_imagine_machine_lateral_raise.gif",
+    "muscles": ["Umeri (lateral)"]
+  },
+  {
+    "name": "Leg Curl (Aparat - Culcat/Șezând/Stând/Flexii picioare/Hamstring Curl/Biceps femural)",
+    "image": "url_imagine_leg_curl.gif",
+    "muscles": ["Femurali (biceps femural, semitendinos, semimembranos)"]
+  },
+  {
+    "name": "Leg Extension (Aparat)",
+    "image": "url_imagine_leg_extension.gif",
+    "muscles": [
+      "Cvadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)"
+    ]
+  },
+  {
+    "name": "Leg Press (Aparat)",
+    "image": "url_imagine_leg_press.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Lunge (Mers/Static - Bară/Ganteră)",
+    "image": "url_imagine_lunge.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Machine Chest Fly (Aparat - Fluturări)",
+    "image": "url_imagine_machine_chest_fly.gif",
+    "muscles": ["Piept"]
+  },
+  {
+    "name": "Machine Chest Press (Aparat - Împins/Împins la aparat orizontal/Piept aparat orizontal/Împins aparat orizontal)",
+    "image": "url_imagine_machine_chest_press.gif",
+    "muscles": ["Piept", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Machine Lateral Raise (Aparat)",
+    "image": "url_imagine_machine_lateral_raise.gif",
+    "muscles": ["Umeri (lateral)"]
+  },
+  {
+    "name": "Machine Preacher Curl (Aparat)",
+    "image": "url_imagine_machine_preacher_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Machine Row (Aparat/Aparat spate/Back Machine Row)",
+    "image": "url_imagine_machine_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Machine Shoulder Press (Aparat)",
+    "image": "url_imagine_machine_shoulder_press.gif",
+    "muscles": ["Umeri", "Triceps"]
+  },
+  {
+    "name": "Machine Squat (Genuflexiuni aparat)",
+    "image": "url_imagine_machine_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Overhead Press (Bară - Presă militară)",
+    "image": "url_imagine_overhead_press_barbell.gif",
+    "muscles": ["Umeri", "Triceps"]
+  },
+  {
+    "name": "Overhead Triceps Extension (Ganteră/Bară/Cablu)",
+    "image": "url_imagine_overhead_triceps_extension.gif",
+    "muscles": ["Triceps"]
+  },
+  {
+    "name": "Pec Deck (Aparat)",
+    "image": "url_imagine_pec_deck.gif",
+    "muscles": ["Piept"]
+  },
+  {
+    "name": "Pendlay Row (Bară)",
+    "image": "url_imagine_pendlay_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Plank (Planșă)",
+    "image": "url_imagine_plank.gif",
+    "muscles": ["Abdomen", "Spate (inferior)"]
+  },
+  {
+    "name": "Preacher Curl (Bară/Ganteră)",
+    "image": "url_imagine_preacher_curl.gif",
+    "muscles": ["Biceps"]
+  },
+  {
+    "name": "Pull-up (Tracțiuni priză pronată)",
+    "image": "url_imagine_pull_up.gif",
+    "muscles": ["Spate (dorsali)", "Biceps"]
+  },
+  {
+    "name": "Push-up (Flotare)",
+    "image": "url_imagine_push_up.gif",
+    "muscles": ["Piept", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Rack Pull",
+    "image": "url_imagine_rack_pull.gif",
+    "muscles": ["Spate (superior)", "Trapez", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Rear Delt Fly (Aparat/Ganteră/Cablu)",
+    "image": "url_imagine_rear_delt_fly.gif",
+    "muscles": ["Umeri (posterior)"]
+  },
+  {
+    "name": "Reverse Crunch",
+    "image": "url_imagine_reverse_crunch.gif",
+    "muscles": ["Abdomen (inferior)"]
+  },
+  {
+    "name": "Reverse Grip Lat Pulldown (Aparat helcometru)",
+    "image": "url_imagine_reverse_grip_lat_pulldown.gif",
+    "muscles": ["Spate (dorsali)", "Biceps"]
+  },
+  {
+    "name": "Russian Twist",
+    "image": "url_imagine_russian_twist.gif",
+    "muscles": ["Oblici"]
+  },
+  {
+    "name": "Seated Calf Raise (Aparat)",
+    "image": "url_imagine_seated_calf_raise.gif",
+    "muscles": ["Solear"]
+  },
+  {
+    "name": "Seated Dumbbell Shoulder Press (Ganteră)",
+    "image": "url_imagine_seated_dumbbell_shoulder_press.gif",
+    "muscles": ["Umeri", "Triceps"]
+  },
+  {
+    "name": "Shrug (Bară - Ridicări umeri/Trapez)",
+    "image": "url_imagine_barbell_shrug.gif",
+    "muscles": ["Trapez"]
+  },
+  {
+    "name": "Side Plank",
+    "image": "url_imagine_side_plank.gif",
+    "muscles": ["Oblici"]
+  },
+  {
+    "name": "Single Arm Dumbbell Row (Ganteră)",
+    "image": "url_imagine_single_arm_dumbbell_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Skullcrusher (Bară EZ/Ganteră - Extensii triceps culcat)",
+    "image": "url_imagine_skullcrusher.gif",
+    "muscles": ["Triceps"]
+  },
+  {
+    "name": "Smith Machine Bench Press",
+    "image": "url_imagine_smith_machine_bench_press.gif",
+    "muscles": ["Piept", "Triceps", "Umeri"]
+  },
+  {
+    "name": "Smith Machine Squat",
+    "image": "url_imagine_smith_machine_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Squat (Bară - Genuflexiune)",
+    "image": "url_imagine_barbell_squat.gif",
+    "muscles": ["Cvadriceps", "Fesieri", "Femurali"]
+  },
+  {
+    "name": "Standing Calf Raise (Aparat/Liber)",
+    "image": "url_imagine_standing_calf_raise.gif",
+    "muscles": ["Gastrocnemian"]
+  },
+  {
+    "name": "Stiff-Legged Deadlift (Bară)",
+    "image": "url_imagine_stiff_legged_deadlift.gif",
+    "muscles": ["Femurali", "Fesieri", "Spate (inferior)"]
+  },
+  {
+    "name": "Straight Arm Pulldown (Cablu)",
+    "image": "url_imagine_straight_arm_pulldown.gif",
+    "muscles": ["Spate (dorsali)"]
+  },
+  {
+    "name": "T-Bar Row",
+    "image": "url_imagine_t_bar_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Triceps Dip (Paralele/Bancă - focus Triceps)",
+    "image": "url_imagine_triceps_dip.gif",
+    "muscles": ["Triceps", "Piept (inferior)", "Umeri"]
+  },
+  {
+    "name": "Triceps Pushdown (Cablu)",
+    "image": "url_imagine_triceps_pushdown.gif",
+    "muscles": ["Triceps"]
+  },
+  {
+    "name": "Upright Row (Bară/Ganteră/Cablu)",
+    "image": "url_imagine_upright_row.gif",
+    "muscles": ["Umeri (lateral)", "Trapez"]
+  },
+  {
+    "name": "Vertical Pulldown (Scripete vertical)",
+    "image": "url_imagine_vertical_pulldown.gif",
+    "muscles": ["Spate (dorsali)", "Biceps"]
+  },
+  {
+    "name": "Weighted Crunch",
+    "image": "url_imagine_weighted_crunch.gif",
+    "muscles": ["Abdomen"]
+  },
+  {
+    "name": "Horizontal Cable Row (Spate scripete orizontal)",
+    "image": "url_imagine_horizontal_cable_row.gif",
+    "muscles": ["Spate", "Biceps"]
+  },
+  {
+    "name": "Cable Triceps Extension (Triceps scripete)",
+    "image": "url_imagine_cable_triceps_extension.gif",
+    "muscles": ["Triceps"]
+  }
+]
